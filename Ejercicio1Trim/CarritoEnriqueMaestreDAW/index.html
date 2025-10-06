@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>AgoodShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">AgoodShop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Productos</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Escribe aquí" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <div id="contenedor" class="p-3 mb-2 bg-body-secondary">
+        <div id="contenedorTabla">
+            <table class="table" id="tablaProductos">
+                <thead>
+                    <tr>
+                        <th class="p-3 mb-2 bg-success text-white">Producto</th>
+                        <th class="p-3 mb-2 bg-success text-white">Cantidad</th>
+                        <th class="p-3 mb-2 bg-success text-white">Pr. Unidad</th>
+                        <th class="p-3 mb-2 bg-success text-white">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla" >
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div id="contedorCarrito">
+            <div id="tituloTotal">
+                <h2>Total</h2>
+            </div>
+
+            <div id="productosCarrito">
+
+            </div>
+
+            <div id="contenedorTotal">
+                <span>TOTAL</span>
+                <span id="totalFinal">0€</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
