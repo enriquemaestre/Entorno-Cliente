@@ -1,0 +1,14 @@
+body{
+    margin: 50pt;
+}
+
+.btn{
+    background-color: blue;
+    color: white;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+}
+
+btn:hover{
+    background-color: aqua;
+}
