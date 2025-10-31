@@ -1,0 +1,21 @@
+<div class="padre">
+    <h2>Comunicando padre e hijo</h2>
+    <button (click)="crearHijo()">Crear hijo</button>
+    <button (click)="destruirHijo()">Desheredar hijo</button>
+    <button (click)="cambiarNombre()">Cambiar nombre</button>
+
+    @if (!mostrarHijo){
+        <div class="mensaje">
+            <p>No hay ningún hijo</p>
+        </div>
+    }@else if (mostrarHijo) { <app-comms-hijo
+        [nombre]="nombre"
+        (saludo)="onSaludo($event)"
+        ></app-comms-hijo>}
+
+    @if (ultimoMensaje){
+        <p>Evento recibido del hijo</p>
+        <span>{{ultimoMensaje}}</span>
+    }
+</div>
+

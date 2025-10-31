@@ -1,0 +1,27 @@
+<div class="control">
+    <h2>Esto es un ciclo de vida de un componente</h2>
+    <div class="botones">
+        <button (click)="crearHijo()"
+        [disabled]="mostrarHijo">
+            crear hijo
+        </button>
+        <button (click)="destruirHijo()"
+            [disabled]="!mostrarHijo">
+            destruir hijo
+        </button>
+        <button (click)="cambiarNombre()"
+        [disabled]="!mostrarHijo">
+            cambiar nombre
+        </button>
+
+    @if (!mostrarHijo) {
+        <p>No hay hijo</p>
+    }
+
+    @if (mostrarHijo) {
+    <app-hijo [nombre]="nombre"></app-hijo>
+    }
+
+    
+    </div>
+</div>
