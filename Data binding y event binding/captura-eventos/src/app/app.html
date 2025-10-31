@@ -1,0 +1,16 @@
+<h1>Capturando eventos del usuario</h1>
+<h2>Clic básico:</h2>
+  <button (click)="hacerClick()">Sumando clicks</button>
+  <p>Clicks que llevamos: {{clicks()}}</p>
+
+<hr>
+<h2>Click con parámetros</h2>
+<button (click)="saludarA('Tomasin')">Saluda a Tomasin</button>
+<button (click)="saludarA('Luis')">Saluda a Luis</button>
+<p>{{mensaje()}}</p>
+
+<hr>
+<h2>Capturar teclado</h2>
+<input type="text"
+(keydown)="capturarEvento($event)">
+<p>{{ultimoEvento() | json}}</p>
